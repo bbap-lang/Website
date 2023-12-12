@@ -82,7 +82,6 @@ code.block:first-line {
 .app {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 
   color: var(--color-text);
   background-color: var(--color-background);

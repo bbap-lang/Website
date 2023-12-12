@@ -1,3 +1,7 @@
+.app{
+  height: 100vh;
+}
+
 main{
   height: calc(100% - 50px);
 }
