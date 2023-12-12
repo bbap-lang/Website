@@ -28,9 +28,9 @@ jobs:
         with:
           node-version: '20.x'
       - name: Install dependencies
-        run: npm get-started
+        run: npm install
       - name: Install Copyfiles
-        run: npm get-started copyfiles -g
+        run: npm install copyfiles -g
       - name: Build
         run: npm run build
       - name: Fix permissions
