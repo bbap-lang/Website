@@ -1,0 +1,154 @@
+@import "variables.css";
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+h2{
+  margin-top: 50px;
+}
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.3rem;
+}
+
+table {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-collapse: collapse;
+
+  & th{
+    background-color: var(--color-background-secondary);
+  }
+
+  & th, & td{
+    text-align: left;
+    border-top: 1px solid var(--color-border);
+    margin: 0;
+    padding: 5px 25px 5px 10px;
+  }
+}
+
+code {
+  font-family: 'Sono', monospace;
+  display: inline-block;
+  font-size: 0.9rem;
+  background-color: var(--color-background-secondary);
+  border-radius: var(--radius-s);
+}
+
+code:not(.block) {
+  line-height: 1.3rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+code.block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  display: block;
+  width: min(calc(100% - 36px), 800px);
+  position: relative;
+
+  font-size: 1rem;
+  font-stretch: extra-expanded;
+  font-weight: var(--weight-thin);
+  border: 1px solid var(--color-border);
+  white-space: pre-line;
+}
+
+code.block:first-line {
+  line-height: 0px;
+  height: 0;
+  visibility: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-background-darker);
+  padding: 20px;
+  border-bottom: 1px solid var(--color-border);
+  justify-content: space-between;
+  height: 50px;
+}
+
+header .nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  line-height: 50px;
+}
+
+header .nav .logo{
+  font-size: var(--font-size-xxl);
+  font-weight: var(--weight-bold);
+  user-select: none;
+  letter-spacing: 3px;
+  color: var(--color-text);
+}
+
+header .nav .logo:hover{
+  text-decoration: none;
+}
+
+header .links{
+  font-size: var(--font-size-l);
+  text-align: center;
+}
+
+header .links a{
+  color: var(--color-text-fade);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header .links a:hover{
+  color: var(--color-text);
+  text-decoration: none;
+  transition: 200ms;
+}
+
+header .socials{
+  display: flex;
+  flex-direction: row;
+}
+
+header .socials img{
+  height: 40px;
+}
+
+header .socials a{
+  opacity: 0.7;
+  transition: 200ms;
+}
+
+header .socials a:hover{
+  opacity: 1;
+}

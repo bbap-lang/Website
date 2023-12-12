@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BBAP</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,200;1,800;1,600&family=Sono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="stylesheet" href="/src/css/get-started.css">
+</head>
+<body>
+<div class="app dark">
+  <header>
+    <div class="nav">
+      <a class="logo" href="/">BBAP</a>
+      <div class="links">
+        <a href="/get-started">Getting started</a>
+        <a href="https://docs.bbap-lang.org/">Docs</a>
+        <a href="https://try.bbap-lang.org/">Playground</a>
+      </div>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/bbap-lang"><img src="/src/icons/github-mark-white.svg" alt="github"></a>
+    </div>
+  </header>
+  <main>
+    <h1>Install</h1>
+    <p>
+      The BBAP compiler is a DotNet tool. To install it, you need to have the latest DotNet SDK installed on your
+      machine.
+      <br>
+      If you don't have it, you can download it from <a href="https://dotnet.microsoft.com/download">here</a>.
+    </p>
+    <p>
+      Once you have the DotNet SDK installed, you can install the <a href="https://www.nuget.org/packages/bbap">BBAP
+      compiler</a> by running the following command:
+    </p>
+    <h4>Using dotnet</h4>
+    <code class="block">
+      dotnet tool install -g bbap
+    </code>
+    <h4>Using Cake</h4>
+    <code class="block">
+      #tool dotnet:?package=bbap
+    </code>
+    <h4>Using Nuke</h4>
+    <code class="block">
+      nuke :add-package bbap
+    </code>
+    <p>
+      If you don't want to install the compiler, you can try it <a href="https://try.bbap-lang.org/">online</a>.
+    </p>
+    <h1>First Program</h1>
+    <p>
+      Let's write our first program in BBAP. Create a file named <code>hello.bbap</code> and write the following code in
+      it:
+    </p>
+    <code class="block">
+      let message = "Hello, World!";
+      println(message);
+    </code>
+    <p>
+      To compile the program, run the following command:
+    </p>
+    <code class="block">
+      bbap hello.bbap hello.abap
+    </code>
+    <p>
+      This will generate a file named <code>hello.abap</code> which is the compiled version of the program. To run the
+      program, you need to copy the content into your SAP system and run it.
+    </p>
+  </main>
+</div>
+</body>
+</html>
